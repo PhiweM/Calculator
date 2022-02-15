@@ -1,3 +1,8 @@
+// font
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spartan:wght@300;500;700&family=Supermercado+One&display=swap');
+
+
 /*=====
 Global Colors
 ======*/
@@ -46,66 +51,73 @@ $White-alternate: hsl(0, 0, 100%);
 :root,
 .dark {
    /*Bg*/
-   --bg-main:$very-dark-desaturated-blue; 
-   --toggle-keypad-bg: $very-dark-desaturated-blue2;   
-   --screen-bg: $very-dark-desaturated-blue3;   
+   --bg-main: #{$very-dark-desaturated-blue}; 
+   --toggle-keypad-bg: #{$very-dark-desaturated-blue2};   
+   --screen-bg: #{$very-dark-desaturated-blue3};   
 
    /*Keys*/
-   --ky-bg: $desaturated-dark-blue;   
-   --ky-bg-shadow: $desaturated-dark-blue2;
-   --ky-bg-toggle: $red;
-   --ky-shadow: $dark-red;
-   --ky-single-bg: $light-grayish-orange;
-   --ky-single-shadow: $grayish-orange;
+   --ky-bg: #{$desaturated-dark-blue};   
+   --ky-bg-shadow: #{$desaturated-dark-blue2};
+   --ky-bg-toggle: #{$red};
+   --ky-shadow: #{$dark-red};
+   --ky-single-bg: #{$light-grayish-orange};
+   --ky-single-shadow: #{$grayish-orange};
 
    /*Text*/
-   --text-primary: $very-dark-greyish-blue;
-   --text-secondary: $white;
+   --text-primary: #{$very-dark-greyish-blue};
+   --text-secondary: #{$white};
 
 }
 
 .light {
     /*Bg*/
-    --bg-main: $light-gray; 
-    --toggle-keypad-bg: $grayish-red;   
-    --screen-bg: $very-light-gray;   
+    --bg-main: #{$light-gray}; 
+    --toggle-keypad-bg: #{$grayish-red};   
+    --screen-bg: #{$very-light-gray};   
  
     /*Keys*/
-    --ky-bg: $dark-moderate-cyan;   
-    --ky-bg-shadow: $very-dark-cyan;
-    --ky-bg-toggle: $orange;
-    --ky-shadow: $dark-orange;
-    --ky-single-bg: $light-grayish-yellow;
-    --ky-single-shadow: $dark-grayish-orange;
+    --ky-bg: #{$dark-moderate-cyan};   
+    --ky-bg-shadow: #{$very-dark-cyan};
+    --ky-bg-toggle: #{$orange};
+    --ky-shadow: #{$dark-orange};
+    --ky-single-bg: #{$light-grayish-yellow};
+    --ky-single-shadow: #{$dark-grayish-orange};
  
     /*Text*/
-    --text-primary: $very-dark-grayish-yellow;
-    --text-secondary: $white-secondary;
+    --text-primary: #{$very-dark-grayish-yellow};
+    --text-secondary: #{$white-secondary};
  }
 
  .alternate {
     /*Bg*/
-    --bg-main: $Very-dark-violet; 
-    --toggle-keypad-bg: $Very-dark-violet2;   
+    --bg-main: #{$Very-dark-violet}; 
+    --toggle-keypad-bg: #{$Very-dark-violet2};   
     // --screen-bg: $very-light-gray;   
  
     /*Keys*/
-    --ky-bg: $Dark-violet;   
-    --ky-bg-shadow: $Vivid-magenta;
-    --ky-bg-toggle: $Pure-cyan;
-    --ky-shadow: $Soft-cyan;
-    --ky-single-bg: $Very-dark-violet;
-    --ky-single-shadow: $Dark-magenta;
+    --ky-bg: #{$Dark-violet};   
+    --ky-bg-shadow: #{$Vivid-magenta};
+    --ky-bg-toggle: #{$Pure-cyan};
+    --ky-shadow: #{$Soft-cyan};
+    --ky-single-bg: #{$Very-dark-violet};
+    --ky-single-shadow: #{$Dark-magenta};
  
     /*Text*/
-    --text-primary: $Light-yellow;
-    --text-secondary: $white-alternate;
-    --text-alternate: $Very-dark-blue;
+    --text-primary: #{$Light-yellow};
+    --text-secondary: #{$white-alternate};
+    --text-alternate: #{$Very-dark-blue};
  }
 
  body {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     background-color: (--bg-main);
+     background: var(--bg-main);
+     font-family: 'Poppins', sans-serif;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Spartan', sans-serif;
+      font-family: 'Supermercado One', cursive;
  }
+
+//  .attribution { font-size: 11px; text-align: center; }
+//     .attribution a { color: hsl(228, 45%, 44%); }

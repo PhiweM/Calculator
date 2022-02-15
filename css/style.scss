@@ -1,0 +1,92 @@
+
+.calc-wrapper {
+    border: 2px solid white;
+    margin: 30px;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(94, 231, 94);
+
+    .theme-toggler {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .toggler {
+            background: none;
+            width: 55px;
+            height: 17px;
+            display: inline-block;
+            padding: 2px 3px;
+            border-radius: 20px;
+            position:relative;
+            border: 1px solid black;
+        }
+
+        .toggler label {
+            text-align: center;
+            font-family: sans-serif;
+            display: inline-block;
+            color: #95A5A6;
+            position:relative;
+            z-index:2;
+            margin: 0;
+            text-align: center;
+            padding: 2px 3px;
+            font-size: 15px;
+            cursor: pointer; 
+          }
+          
+          .toggler input {
+            /* display: none; */
+            position: absolute;
+            z-index: 3;
+            opacity: 0;
+            cursor: pointer;
+            width: 100%;
+          }
+          
+          .toggler span {
+            height: 16px;
+            width: 16px;
+            line-height: 18px;
+            border-radius: 50%;
+            background:#fff;
+            display:block;
+            position:absolute;
+            left: 20px;
+            top: 2px;
+            transition:all 0.3s ease-in-out;
+          }
+          
+          .toggler input[value="false"]:checked ~ span{
+            background:#e74c3c;
+            left:2px;
+            color:#fff;
+          }
+          
+          .toggler input[value="true"]:checked ~ span{
+            background:#27ae60;
+            left: 46px;
+          }
+          .toggler input[value="-1"]:checked ~ span{
+            background:#95A5A6;
+            left: 23px;
+          }
+          
+          .toggler input[value="false"]:checked + label,
+          .toggler input[value="true"]:checked + label{
+            color:#fff;
+          }
+          .toggler input[value="-1"]:checked + label{
+            color:#fff;
+          }
+          
+    }
+}
+
+.display-wrapper {
+    background-color: chocolate;
+}
