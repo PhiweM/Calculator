@@ -1,10 +1,10 @@
 @import './global';
 
 body {
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    // font-family: 'Poppins', sans-serif;
+    // font-family: 'Roboto', sans-serif;
     font-family: 'Spartan', sans-serif;
-    font-family: 'Supermercado One';
+    // font-family: 'Supermercado One'cursive;
     // background-color: $very-dark-desaturated-blue;
 }
 
@@ -16,7 +16,12 @@ body {
 .header-wrapper {
     display: flex;
     justify-content: space-between;
-    background-color: $test-color;
+    // background-color: $test-color;
+
+    .title h2 {
+      color: var(--text-secondary);
+      font-size: 2rem;
+    }
 
     .theme-toggler {
         display: flex;
@@ -25,11 +30,11 @@ body {
 
         .toggler {
             background: var(--toggle-keypad-bg);
-            width: 50px;
-            height: 15px;
+            width: 54px;
+            height: 16px;
             display: inline-block;
             padding: 3px 3px;
-            margin: 1px;
+            margin: 2px;
             border-radius: 20px;
             position:relative;
             // border: 1px solid black; /* to be removed*/
@@ -45,7 +50,7 @@ body {
             margin: 0;
             text-align: center;
             padding: 2px 3px;
-            font-size: 14px;
+            font-size: 12px;
             font-weight: bold;
             cursor: pointer; 
           }
@@ -60,6 +65,7 @@ body {
           }
           
           .toggler span {
+            margin: 0 2px;
             height: 15px;
             width: 15px;
             line-height: 18px;
@@ -96,8 +102,31 @@ body {
           }
           
     }
+
+    .theme-toggler-title {
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin: 6px 20px 0 0;
+    }
 }
 
+
 .display-wrapper {
-    background-color: chocolate;
+    background-color: var(--toggle-keypad-bg);
+    height: 70px;
+    border-radius: 15px;
+    color: var(--text-secondary);
+    text-align: left;
+    padding: 20px;
+    font-size: 40px;
+    text-align: end !important;
+   
+   
+}
+
+.result {
+  text-align:right;
 }
