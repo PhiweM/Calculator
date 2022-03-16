@@ -8,9 +8,9 @@ Global Colors
 ======*/
 $test-color: rgba(255, 217, 0, 0.603);
 
-/* Dark Theme 1*/
+/* Dark Theme */
 $very-dark-desaturated-blue:hsl(222, 26%, 31%);
-$very-dark-desaturated-blue2:hsl(223, 43%, 31%);
+$very-dark-desaturated-blue2:hsl(223, 31%, 20%);
 $very-dark-desaturated-blue3:hsl(224, 36%, 15%);
 $desaturated-dark-blue: hsl(225, 21%, 49%);
 $desaturated-dark-blue2: hsl(224, 28%, 35%);
@@ -50,17 +50,19 @@ $white-alternate: hsl(0, 0, 100%);
 
 
 :root,
+
+/* Dark Theme 1*/
 .dark {
    /*Bg*/
    --bg-main: #{$very-dark-desaturated-blue}; 
-   --toggle-keypad-bg: #{$very-dark-desaturated-blue3};   
-   --screen-bg: #{$very-dark-desaturated-blue2};   
+   --toggle-keypad-bg: #{$very-dark-desaturated-blue2};   
+   --screen-bg: #{$very-dark-desaturated-blue3};   
 
    /*Keys*/
    --ky-bg: #{$desaturated-dark-blue};   
    --ky-bg-shadow: #{$desaturated-dark-blue2};
-   --ky-bg-toggle: #{$red};
-   --ky-shadow: #{$dark-red};
+   --ky-red: #{$red};
+   --ky-red-shadow: #{$dark-red};
    --ky-single-bg: #{$light-grayish-orange};
    --ky-single-shadow: #{$grayish-orange};
 
@@ -69,7 +71,7 @@ $white-alternate: hsl(0, 0, 100%);
    --text-secondary: #{$white};
 
 }
-
+/* Light Theme 2*/
 .light {
     /*Bg*/
     --bg-main: #{$light-gray}; 
@@ -88,7 +90,7 @@ $white-alternate: hsl(0, 0, 100%);
     --text-primary: #{$very-dark-grayish-yellow};
     --text-secondary: #{$white-secondary};
  }
-
+/* Alternate Theme 3*/
  .alternate {
     /*Bg*/
     --bg-main: #{$Very-dark-violet}; 
@@ -114,6 +116,10 @@ $white-alternate: hsl(0, 0, 100%);
       padding: 0;
       box-sizing: border-box;
       background: var(--bg-main);
+      display: grid;
+      place-items: center;
+      height: 100vh;
+      position: relative;
  }
 
 //  .attribution { font-size: 11px; text-align: center; }
